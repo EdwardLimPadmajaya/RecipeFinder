@@ -1,0 +1,79 @@
+.meal-planning {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.meal-planning h2 {
+  font-size: 2rem;
+  margin: 40px 0 10px; /* Added top margin for padding */
+}
+
+.meal-planning p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.meal-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.meal-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meal-card .meal-day {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.meal-card img {
+  width: 100%;
+  height: auto;
+  padding: 10px; /* Added padding to the images */
+  border-radius: 12px; /* Added rounded corners to the images */
+}
+
+.meal-card h3 {
+  margin: 10px;
+  font-size: 1.2rem;
+  text-align: center; /* Centered the title */
+}
+
+.meal-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.meal-card p {
+  margin: 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.meal-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.meal-image {
+  width: 80%; /* Adjust image width to ensure padding */
+  height: auto;
+}

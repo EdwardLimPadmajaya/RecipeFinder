@@ -1,0 +1,114 @@
+.ingredient-filter {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.ingredient-filter h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.ingredients-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 columns */
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredient-item input {
+  margin-right: 5px;
+}
+
+.search-ingredient-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-ingredient-container input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  outline: none;
+}
+
+.search-ingredient-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.search-ingredient-container button:hover {
+  background-color: #0056b3;
+}
+
+.searched-ingredients {
+  margin-top: 10px;
+}
+
+.searched-ingredient-item {
+  display: flex;
+  justify-content: space-between; /* Align item and button on opposite sides */
+  align-items: center;
+  padding: 10px; /* Add padding */
+  border-bottom: 1px solid #ddd; /* Optional: Add a bottom border for separation */
+}
+
+.searched-ingredient-item span {
+  flex-grow: 1; /* Take up remaining space */
+  text-align: left; /* Align text to the left */
+}
+
+.searched-ingredient-item button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searched-ingredient-item button:hover {
+  background-color: #218838;
+}
+
+.ingredient-filter button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ingredient-filter button:hover {
+  background-color: #0056b3;
+}
+
+.box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

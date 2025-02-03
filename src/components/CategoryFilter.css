@@ -1,0 +1,28 @@
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.category-item.active {
+  transform: scale(1.1); /* Only scaling active without transitions */
+}
+
+.category-icon {
+  font-size: 2rem;
+}
+
+.category-name {
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
