@@ -46,9 +46,7 @@ A meal planning app that allows users to plan meals for each day of the week, sa
 
 Once the dependencies are installed, you can start the development server with the following command:
 
-    ```bash
     npm start
-    ```
 
 ## Folder Structure
 
