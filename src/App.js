@@ -1,22 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import IngredientFilterPage from './pages/IngredientFilterPage';
 import IndexPage from './pages/IndexPage';
 import FavoritesPage from './pages/FavoritesPage';
 import RecipeDetailsPage from './pages/RecipeDetailsPage';
 import MealPlanningPage from './pages/MealPlanningPage';
-import { fetchRecipesByIngredients } from './services/api';
+
 import './index.css';
 
 const App = () => {
-  const [recipes, setRecipes] = useState([]);
+  const [recipes] = useState([]);
   const [favorites, setFavorites] = useState([]);
 
-  const handleIngredientSearch = async (ingredients) => {
-    const results = await fetchRecipesByIngredients(ingredients);
-    setRecipes(results);
-  };
 
   const handleFavorite = (recipe) => {
     const updatedFavorites = [...favorites, recipe];
@@ -54,7 +49,6 @@ const App = () => {
               handleRecipeSelect={(id) => window.location.href = `/recipe/${id}`}
             />
           } />
-          <Route path="/filter-by-ingredients" element={<IngredientFilterPage onFilter={handleIngredientSearch} />} />
           <Route path="/favorites" element={
             <FavoritesPage
               favorites={favorites}

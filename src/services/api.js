@@ -13,17 +13,6 @@ export const fetchRecipes = async (query) => {
   return response.data.results;
 };
 
-export const fetchRecipesByIngredients = async (ingredients) => {
-  const response = await axios.get(`${BASE_URL}/findByIngredients`, {
-    params: {
-      ingredients: ingredients.join(','),
-      number: 10,
-      apiKey: API_KEY
-    }
-  });
-  return response.data;
-};
-
 export const fetchRecipeDetails = async (id) => {
   const response = await axios.get(`${BASE_URL}/${id}/information`, {
     params: {

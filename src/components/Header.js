@@ -8,7 +8,6 @@ const Header = () => (
       <h1>Recipe Finder</h1>
       <nav className="nav">
         <Link to="/">Home</Link>
-        <Link to="/filter-by-ingredients">Filter by Ingredients</Link>
         <Link to="/favorites">Favorites</Link>
         <Link to="/meal-planning">Meal Planning</Link>
       </nav>
