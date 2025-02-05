@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Meal Planning App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A meal planning app that allows users to plan meals for each day of the week, save them in local storage, and view recipes with ingredients.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add meals for each day of the week
+- Remove meals from the meal plan
+- View meal details and recipes
+- Store meal plans in local storage
+- Responsive layout for meal cards and the remove button
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js installed on your machine. If you don't have it, download and install it from [Node.js official website](https://nodejs.org/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `npm` (Node Package Manager) comes with Node.js, so no additional installation is required.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+   Open a terminal and run the following command to clone the repo to your local machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/your-username/meal-planning-app.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Navigate to the project folder:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Change into the directory where the project was cloned:
 
-### `npm run eject`
+    ```bash
+    cd meal-planning-app
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install the dependencies:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Run the following command to install the required dependencies for the project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Running the App
 
-## Learn More
+Once the dependencies are installed, you can start the development server with the following command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    npm start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Folder Structure
 
-### Code Splitting
+- `src/`: The main source folder containing all the React components and styles.
+- `components/`: Reusable components like headers, buttons, etc.
+- `pages/`: React components for different pages of the app, like Meal Planning, Favorites, etc.
+- `services/`: Contains functions for making API calls (e.g., fetching recipes).
+- `index.css`: Global styles for the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
