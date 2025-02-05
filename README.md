@@ -2,6 +2,10 @@
 
 A meal planning app that allows users to plan meals for each day of the week, save them in local storage, and view recipes with ingredients.
 
+## API Integration
+
+The app utilizes the **Spoonacular API** to retrieve recipe data, including meal details and ingredients.
+
 ## Features
 
 - Add meals for each day of the week
