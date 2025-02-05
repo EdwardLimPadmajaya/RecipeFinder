@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Make sure to import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import './MealPlanningPage.css';
 
 const MealPlanningPage = () => {
@@ -36,7 +36,9 @@ const MealPlanningPage = () => {
   return (
     <div className="meal-planning">
       <h2>Meal Planning</h2>
-      <p>Tap into our databases to offer customized meal plans or build your own interactive meal planning tool.</p>
+      {Object.values(meals).every(dayMeals => dayMeals.length === 0) && (
+        <p>Tap into our databases to offer customized meal plans or build your own interactive meal planning tool.</p>
+      )}
       <div className="meal-grid">
         {Object.keys(meals).map((day) => (
           <div key={day} className="meal-card">
@@ -50,7 +52,7 @@ const MealPlanningPage = () => {
                   <Link to={`/recipe/${meal.id}`} className="meal-link">
                     <h3>{meal.title}</h3>
                   </Link>
-                  <button onClick={() => removeMeal(day, index)}>Remove</button>
+                  <button className="remove-button" onClick={() => removeMeal(day, index)}>Remove</button>
                 </div>
               ))
             )}
